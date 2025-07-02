@@ -1,5 +1,5 @@
-import pkg_resources
-__version__ = pkg_resources.require("bigsmiles")[0].version
+from importlib.metadata import version
+__version__ = version("bigsmiles")
 
 from bigsmiles.config import Config
 from bigsmiles.errors import ERRORS
